@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class AreaTubo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o raio do tubo: ");
+        double raio = scanner.nextDouble();
+        
+        System.out.print("Digite a altura (comprimento) do tubo: ");
+        double altura = scanner.nextDouble();
+        
+        double areaLateral = 2 * Math.PI * raio * altura;
+        double areaBases = 2 * Math.PI * raio * raio;
+        double areaTotal = areaLateral + areaBases;
+        
+        System.out.println("A área total do tubo (cilindro) é: " + areaTotal);
+    }
+}
